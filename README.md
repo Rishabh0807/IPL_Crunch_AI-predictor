@@ -28,11 +28,33 @@ When training an advanced machine learning model using all environmental variabl
 
 Our trained Random Forest Classifier produced the following Feature Importance Matrix:
 
-![IPL Feature Importance Matrix](feature_importance.png)
+![IPL Feature Importance Matrix](feature_importance.png
 
-*Note: Ensure the generated `feature_importance.png` plot image is uploaded in the same repository path to render cleanly.*
-
+<img width="3000" height="1800" alt="feature_importance" src="https://github.com/user-attachments/assets/d5295974-65b4-461b-8adc-5ac31d82da0b" />
 ---
+
+ 
+## 🎮 Interactive AI Match Simulator (Console CLI Application)
+
+To bring the machine learning engine to life and demonstrate real-world utility, the repository features a standalone, interactive console-based simulator (**`predict_cli.py`**). This utility allows users, evaluators, and judges to simulate custom match scenarios directly within the terminal window without requiring a heavy browser-based frontend deployment.
+
+### ⚙️ How to Launch the Simulator:
+Simply execute the Python script using your native command prompt terminal or the Spyder IPython console:
+```bash
+python predict_cli.py
+*"The expected output window after running the block of code would be featuring like this:"
+═══════════════════════════════════════════════════════
+               🔮 AI SIMULATION REPORT               
+═══════════════════════════════════════════════════════
+ ⚔️  MATCHUP: Mumbai Indians vs Chennai Super Kings
+ 🏟️  VENUE:   Wankhede Stadium | 📅 ERA: 2024
+ 🪙  TOSS:    Mumbai Indians elected to field first
+───────────────────────────────────────────────────────
+ 🏆 AI PREDICTED WINNER:  👉 Mumbai Indians 👈
+ 📊 MODEL CONFIDENCE:      📈 54.85%
+═══════════════════════════════════════════════════════
+
+
 
 ## 🛠️ Tech Stack & Technical Pipeline
 
@@ -44,6 +66,14 @@ Our trained Random Forest Classifier produced the following Feature Importance M
   4. **Ensemble Training:** Trained a `RandomForestClassifier` (150 estimators, max_depth=12) to optimize multi-class prediction capabilities.
 
 ---
+---
+
+## 🔮 Future Roadmap & Strategic Scalability
+
+To push the multi-class predictive boundary beyond the baseline accuracy of **44.35%**, the next phase of development will implement the following systemic features:
+1. **Live Form Dynamics:** Engineer moving average parameters tracking individual team win-streaks and head-to-head match form over their trailing 5 matches.
+2. **Granular Player Metrics:** Incorporate structural feature inputs tracking team-level squad composition values, such as total historical runs/wickets for active playing XI selections at specific venues.
+3. **Advanced Boosting Architectures:** Benchmark the ensemble Random Forest baseline model against gradient-boosted structural architectures like `XGBoost` or `LightGBM` to manage non-linear boundary constraints.
 
 ## 📈 Final Model Metrics
 * **Baseline Accuracy:** Successfully achieved a classification predictive accuracy of **43.55%** across over 20 unique high-cardinality historical classification output options—performing significantly better than a random baseline guess (~5%).
@@ -51,6 +81,5 @@ Our trained Random Forest Classifier produced the following Feature Importance M
 ---
 
 ## 👥 Authors & Team Details
-* **Developer Name:** Shivansh Srivastava  
-* **Registration Number:** 25BCE10765  
+* **Developer Name:** Rishabh Bhardwaj  
 * **Institution:** Vellore Institute of Technology (VIT)
